@@ -1,0 +1,123 @@
+html {
+	position: relative;
+}
+
+body {
+	margin-bottom: 100px;
+	margin-top: 35px;
+}
+
+.jumbotron {
+	height: 600px;
+	background-image: url(../img/cat-bg3.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0 -150px;
+	color: #eaeaea;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.jumbotron h1, .jumbotron p {
+	text-shadow: 2px 2px 12px rgba(0, 0, 0, .6);
+}
+.jumbotron img {
+	margin-top: 100px;
+	width: 200px;
+	border: 5px solid #888;
+	box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+	width: 250px;
+	border-top: 3px solid #666;
+	opacity: 0;
+	animation: besarkecil 2s ease forwards;
+}
+
+
+section {
+	min-height: 500px;
+}
+
+.pKiri, .pKanan {
+	opacity: 0;
+	transform: translate(-50px, 0) rotate(30deg);
+	transition: 1.5s;
+}
+.pKanan {
+	transform: translate(50px, 0) rotate(-30deg);
+}
+.about2 {
+	opacity: 0;
+	transform: translate(0,-50px);
+	transition: 1.5s;
+}
+.about2.about2Show {
+	opacity: 1;
+	transform: translate(0,0);
+	
+}
+
+.pKiri.pShow, .pKanan.pShow {
+	opacity: 1;
+	transform: translate(0, 0) rotate(0);
+
+}
+
+.portofolio {
+	padding-top:10px ;
+	background-color: #eee;
+	padding-bottom: 30px;
+}
+.portofolio .thumbnail {
+	opacity: 0;
+	transform: translate(0, 50px);
+	transition: .5s;
+}
+.portofolio .thumbnail.show {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.contact {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	min-height: 700px;
+}
+footer {
+	position: absolute;
+	height: 100px;
+	width: 100%;
+	bottom: 0;
+	background-color: #333;
+	padding-top: 20px;
+}
+
+footer p {
+	color: #aaa;
+	font-size: 1.3em;
+}
+
+
+footer p i {
+	color: hotpink;
+}
+
+footer a i {
+	color: ;
+}
+
+
+/*Motion*/
+@keyframes besarkecil {
+	0% {
+		opacity: 0;
+		width: 2000px;
+		border-top: 3px solid #666;
+	}
+	100% {
+		opacity: 1;
+		width: 250px;
+		border-top: 3px solid #666;
+	}
+}
