@@ -11,8 +11,9 @@ body {
 	height: 600px;
 	width: 100%;
 	background-image: url(../img/cat-bg3.jpg);
+	background-size: auto;
 	background-attachment: fixed;
-	background-size: cover;
+	
 	background-position: 0 -150px;
 	color: #eaeaea;
 	background-repeat: no-repeat;
